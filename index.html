@@ -194,7 +194,7 @@
     <!-- /Lugar y Fecha -->
 
     <!-- Conviertete en orador -->
-    <section id="conviertete-en-orador" class="pt-2 pb-2">
+    <section id="conviertete-en-orador" class="pt-3 pb-3">
         <div class="container">
             <div class="row">
                 <div class="col text-uppercase text-center">
@@ -203,7 +203,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col text-center">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres
+                <div class="col text-center">Anótate como orador para dar una <abbr datta-toggle="tooltip" title="Charlas de 5 minutos">charla ignite</abbr>. Cuéntanos de qué quieres
                     hablar!</div>
             </div>
             <div class="row">
@@ -215,6 +215,19 @@
                                 </div>
                                 <div class="form-group col-12 col-md-6">
                                     <input type="text" class="form-control" placeholder="Apellido">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <textarea name="text" class="form-control form-control-lg" placeholder="Sobre que quieres hablar?"></textarea>
+                                    <small class="form-text text-muted">
+                                        Recuerda incluir un titulo para tu charla
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-platzi btn-block">Enviar</button>
                                 </div>
                             </div>
                         </form>
@@ -266,6 +279,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
