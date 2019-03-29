@@ -41,7 +41,8 @@
                         <a class="nav-link" href="#conviertete-en-orador">Coviertete en Orador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-platzi" href="#">Comprar Tickets</a>
+                        <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modalCompra">Comprar
+                            Tickets</a>
                     </li>
 
                 </ul>
@@ -203,38 +204,40 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col text-center">Anótate como orador para dar una <abbr datta-toggle="tooltip" title="Charlas de 5 minutos">charla ignite</abbr>. Cuéntanos de qué quieres
+                <div class="col text-center">Anótate como orador para dar una <abbr datta-toggle="tooltip"
+                        title="Charlas de 5 minutos">charla ignite</abbr>. Cuéntanos de qué quieres
                     hablar!</div>
             </div>
             <div class="row">
-                    <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2 ">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md-6">
-                                    <input type="text" class="form-control" placeholder="Nombre">
-                                </div>
-                                <div class="form-group col-12 col-md-6">
-                                    <input type="text" class="form-control" placeholder="Apellido">
-                                </div>
+                <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2 ">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Nombre">
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col">
-                                    <textarea name="text" class="form-control form-control-lg" placeholder="Sobre que quieres hablar?"></textarea>
-                                    <small class="form-text text-muted">
-                                        Recuerda incluir un titulo para tu charla
-                                    </small>
-                                </div>
+                            <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Apellido">
                             </div>
-                            <div class="form-row">
-                                <div class="col">
-                                    <button type="button" class="btn btn-platzi btn-block">Enviar</button>
-                                </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <textarea name="text" class="form-control form-control-lg"
+                                    placeholder="Sobre que quieres hablar?"></textarea>
+                                <small class="form-text text-muted">
+                                    Recuerda incluir un titulo para tu charla
+                                </small>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <button type="button" class="btn btn-platzi btn-block">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
+            </div>
         </div>
-        
+
     </section>
     <!-- /Conviertete en orador -->
 
@@ -269,7 +272,42 @@
     <!-- /Footer -->
 
     <!-- Modal -->
-    
+    <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Comprar Tickets</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <div class="alert alert-warning" role="alert">
+                        Recibiras un correo sin sales sorteado
+                      </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-platzi">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- /Modal -->
 
     <!-- Optional JavaScript -->
